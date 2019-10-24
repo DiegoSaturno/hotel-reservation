@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.Reservation.Model\Hotel.Reservation.Model.csproj" />
+  </ItemGroup>
+
 </Project>

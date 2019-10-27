@@ -10,7 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Reservation.Domain", "Hotel.Reservation.Domain\Hotel.Reservation.Domain.csproj", "{5AC1934F-5631-45FD-A9C7-231F0D5D7751}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Reservation.Domain", "Hotel.Reservation.Domain\Hotel.Reservation.Domain.csproj", "{5AC1934F-5631-45FD-A9C7-231F0D5D7751}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Reservation.ApplicationService", "Hotel.Reservation.ApplicationService\Hotel.Reservation.ApplicationService.csproj", "{4462DABB-43B4-46EE-BBF3-019AFC4EC091}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Reservation.Repository", "Hotel.Reservation.Repository\Hotel.Reservation.Repository.csproj", "{754F4CC0-0587-4279-9C3E-2A1FBA8B74D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Reservation.Application", "Hotel.Reservation.Application\Hotel.Reservation.Application.csproj", "{AB13289E-479E-44CD-89C3-88CBB2921111}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +32,18 @@ Global
 		{5AC1934F-5631-45FD-A9C7-231F0D5D7751}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AC1934F-5631-45FD-A9C7-231F0D5D7751}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AC1934F-5631-45FD-A9C7-231F0D5D7751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4462DABB-43B4-46EE-BBF3-019AFC4EC091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4462DABB-43B4-46EE-BBF3-019AFC4EC091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4462DABB-43B4-46EE-BBF3-019AFC4EC091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4462DABB-43B4-46EE-BBF3-019AFC4EC091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754F4CC0-0587-4279-9C3E-2A1FBA8B74D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754F4CC0-0587-4279-9C3E-2A1FBA8B74D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754F4CC0-0587-4279-9C3E-2A1FBA8B74D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754F4CC0-0587-4279-9C3E-2A1FBA8B74D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB13289E-479E-44CD-89C3-88CBB2921111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB13289E-479E-44CD-89C3-88CBB2921111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB13289E-479E-44CD-89C3-88CBB2921111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB13289E-479E-44CD-89C3-88CBB2921111}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

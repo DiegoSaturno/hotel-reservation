@@ -1,30 +1,186 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "Autofac/4.9.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.9.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Hotel.Reservation.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Hotel.Reservation.ApplicationService": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Reservation.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Reservation.Application.dll": {}
+        }
+      },
+      "Hotel.Reservation.ApplicationService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Hotel.Reservation.Domain": "1.0.0",
+          "Hotel.Reservation.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Reservation.ApplicationService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Reservation.ApplicationService.dll": {}
+        }
+      },
+      "Hotel.Reservation.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/Hotel.Reservation.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Reservation.Domain.dll": {}
+        }
+      },
+      "Hotel.Reservation.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Hotel.Reservation.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Reservation.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Reservation.Repository.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Autofac/4.9.1": {
+      "sha512": "L92DMQxpy4Xw3IypXxL8Z4NHt+qIkB1e0NB2OJ9u105Xp5sVsZSJ04YtYyubmM3KG8aC+WpyBhN14XcjPx5gLg==",
+      "type": "package",
+      "path": "autofac/4.9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.4.9.1.nupkg.sha512",
+        "autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.pdb",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.pdb",
+        "lib/netstandard1.1/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.pdb",
+        "lib/netstandard2.0/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/5.0.1": {
+      "sha512": "92/AmuykrdvaLlE8Y4sc4SlX2RrCeClUqddjNi7cAYsOsVD/jq5JXDP1ZhHSBan4P/o7AKjpxjD/MrPTO0DHRw==",
+      "type": "package",
+      "path": "autofac.extensions.dependencyinjection/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "sha512": "8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Hotel.Reservation.Application/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Reservation.Application/Hotel.Reservation.Application.csproj",
+      "msbuildProject": "../Hotel.Reservation.Application/Hotel.Reservation.Application.csproj"
+    },
+    "Hotel.Reservation.ApplicationService/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Reservation.ApplicationService/Hotel.Reservation.ApplicationService.csproj",
+      "msbuildProject": "../Hotel.Reservation.ApplicationService/Hotel.Reservation.ApplicationService.csproj"
+    },
+    "Hotel.Reservation.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Reservation.Domain/Hotel.Reservation.Domain.csproj",
+      "msbuildProject": "../Hotel.Reservation.Domain/Hotel.Reservation.Domain.csproj"
+    },
+    "Hotel.Reservation.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Reservation.Repository/Hotel.Reservation.Repository.csproj",
+      "msbuildProject": "../Hotel.Reservation.Repository/Hotel.Reservation.Repository.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "Autofac.Extensions.DependencyInjection >= 5.0.1",
+      "Hotel.Reservation.Application >= 1.0.0",
+      "Hotel.Reservation.ApplicationService >= 1.0.0",
+      "Hotel.Reservation.Domain >= 1.0.0",
+      "Hotel.Reservation.Repository >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\Dell\\.nuget\\packages\\": {},
+    "C:\\Users\\diego\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Personal\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj",
+      "projectUniqueName": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj",
       "projectName": "Hotel.Reservation",
-      "projectPath": "C:\\Dev\\Personal\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj",
-      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Personal\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\obj\\",
+      "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj",
+      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -36,7 +192,20 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\Hotel.Reservation.ApplicationService.csproj": {
+              "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\Hotel.Reservation.ApplicationService.csproj"
+            },
+            "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Application\\Hotel.Reservation.Application.csproj": {
+              "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Application\\Hotel.Reservation.Application.csproj"
+            },
+            "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj": {
+              "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj"
+            },
+            "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\Hotel.Reservation.Repository.csproj": {
+              "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\Hotel.Reservation.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -47,6 +216,12 @@
     },
     "frameworks": {
       "netcoreapp3.0": {
+        "dependencies": {
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[5.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

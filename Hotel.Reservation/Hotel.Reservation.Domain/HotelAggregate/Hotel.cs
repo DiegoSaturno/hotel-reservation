@@ -8,14 +8,15 @@ namespace Hotel.Reservation.Domain.HotelAggregate
     {
         public string Name { get; private set; }
         public int Rating { get; private set; }
-        public IEnumerable<Reservation> ReservationValues;
+        public IEnumerable<Reservation> ReservationValues { get; private set; }
 
         public Hotel() { }
 
-        public Hotel(string name, int rating)
+        public Hotel(string name, int rating, List<Reservation> reservationValues)
         {
             Name = name;
             Rating = rating;
+            ReservationValues = reservationValues;
         }
     }
 }

@@ -1,12 +1,38 @@
-﻿using System;
+﻿
+using Autofac;
+using Hotel.Reservation.ApplicationLayer.Services;
+using Hotel.Reservation.ApplicationService.Interfaces;
+using Hotel.Reservation.Repository.Interfaces;
+using Hotel.Reservation.Repository.Repositories;
 
 namespace Hotel.Reservation
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static IContainer CompositionRoot()
         {
-            Console.WriteLine("Hello World!");
+            var builder = new ContainerBuilder();
+            builder
+                .RegisterType<Application.Application>();
+
+            builder
+                .RegisterType<HotelService>()
+                .As<IHotelService>()
+                .InstancePerLifetimeScope();
+
+            builder
+                .RegisterType<HotelRepository>()
+                .As<IHotelRepository>()
+                .InstancePerLifetimeScope();
+
+            return builder.Build();
+        }
+
+        public static void Main(string[] args)
+        {
+            CompositionRoot()
+                .Resolve<Application.Application>()
+                .Run(args);
         }
     }
 }

@@ -5,4 +5,15 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.Reservation.ApplicationService\Hotel.Reservation.ApplicationService.csproj" />
+    <ProjectReference Include="..\Hotel.Reservation.Application\Hotel.Reservation.Application.csproj" />
+    <ProjectReference Include="..\Hotel.Reservation.Domain\Hotel.Reservation.Domain.csproj" />
+    <ProjectReference Include="..\Hotel.Reservation.Repository\Hotel.Reservation.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

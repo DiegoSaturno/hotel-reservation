@@ -1,23 +1,144 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Personal\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj": {}
+    "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Personal\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj": {
+    "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\Hotel.Reservation.ApplicationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Personal\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj",
-        "projectName": "Hotel.Reservation",
-        "projectPath": "C:\\Dev\\Personal\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Personal\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\obj\\",
+        "projectUniqueName": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\Hotel.Reservation.ApplicationService.csproj",
+        "projectName": "Hotel.Reservation.ApplicationService",
+        "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\Hotel.Reservation.ApplicationService.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj": {
+                "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj"
+              },
+              "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\Hotel.Reservation.Repository.csproj": {
+                "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\Hotel.Reservation.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Application\\Hotel.Reservation.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Application\\Hotel.Reservation.Application.csproj",
+        "projectName": "Hotel.Reservation.Application",
+        "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Application\\Hotel.Reservation.Application.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\Hotel.Reservation.ApplicationService.csproj": {
+                "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\Hotel.Reservation.ApplicationService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj",
+        "projectName": "Hotel.Reservation.Domain",
+        "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +161,139 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\Hotel.Reservation.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\Hotel.Reservation.Repository.csproj",
+        "projectName": "Hotel.Reservation.Repository",
+        "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\Hotel.Reservation.Repository.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj": {
+                "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj",
+        "projectName": "Hotel.Reservation",
+        "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\Hotel.Reservation.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\Hotel.Reservation.ApplicationService.csproj": {
+                "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.ApplicationService\\Hotel.Reservation.ApplicationService.csproj"
+              },
+              "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Application\\Hotel.Reservation.Application.csproj": {
+                "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Application\\Hotel.Reservation.Application.csproj"
+              },
+              "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj": {
+                "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Domain\\Hotel.Reservation.Domain.csproj"
+              },
+              "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\Hotel.Reservation.Repository.csproj": {
+                "projectPath": "C:\\Dev\\Diego\\hotel-reservation\\Hotel.Reservation\\Hotel.Reservation.Repository\\Hotel.Reservation.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

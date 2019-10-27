@@ -24,7 +24,7 @@ namespace Hotel.Reservation.UnitTests.ApplicationService
             Assert.Equal(hotelName, result.Name);
         }
 
-        public static GuestDto rewardGuest { get; } = new GuestDto(HotelGuestType.Rewards, new List<DateTimeOffset>()
+        private static GuestDto rewardGuest = new GuestDto(HotelGuestType.Rewards, new List<DateTimeOffset>()
         {
             new DateTimeOffset(2018, 7, 1, 0, 0, 0, 0, TimeSpan.Zero),
             new DateTimeOffset(2018, 7, 2, 0, 0, 0, 0, TimeSpan.Zero),

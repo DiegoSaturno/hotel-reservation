@@ -15,6 +15,20 @@ namespace Hotel.Reservation.Domain.Common
             Name = name;
         }
 
+        public override bool Equals(object obj)
+        {
+            var enumeration1 = obj as Enumeration;
+
+            return enumeration1 != null
+                && enumeration1.Id == Id
+                && enumeration1.Name == Name;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
         public static bool operator == (Enumeration enum1, Enumeration enum2)
         {
             if (enum1 is null) { return enum2 is null; }

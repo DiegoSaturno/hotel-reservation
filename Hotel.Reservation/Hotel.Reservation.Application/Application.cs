@@ -4,12 +4,14 @@ using Hotel.Reservation.ApplicationService.Interfaces;
 using Hotel.Reservation.Domain.HotelAggregate;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Hotel.Reservation.Application
 {
+    [ExcludeFromCodeCoverage]
     public class Application
     {
         protected readonly IHotelService _hotelService;
@@ -35,9 +37,13 @@ namespace Hotel.Reservation.Application
 
             foreach (var guest in guests)
             {
+                Console.WriteLine($"Guest Type: '{guest.GuestType.Name}'");
+                Console.WriteLine($"Guest days of staying: '{String.Join(", ", guest.DaysOfStaying)}'");
+
                 var hotel = _hotelService.FindCheapest(guest);
 
                 Console.WriteLine(hotel.Name);
+                Console.WriteLine("-----------");
             }
         }
 

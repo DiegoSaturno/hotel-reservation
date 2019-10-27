@@ -4,9 +4,11 @@ using Hotel.Reservation.ApplicationLayer.Services;
 using Hotel.Reservation.ApplicationService.Interfaces;
 using Hotel.Reservation.Repository.Interfaces;
 using Hotel.Reservation.Repository.Repositories;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Hotel.Reservation
 {
+    [ExcludeFromCodeCoverage]
     public class Program
     {
         private static IContainer CompositionRoot()

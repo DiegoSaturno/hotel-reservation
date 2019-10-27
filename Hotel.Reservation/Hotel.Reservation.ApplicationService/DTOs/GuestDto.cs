@@ -10,8 +10,6 @@ namespace Hotel.Reservation.ApplicationService.DTOs
         public HotelGuestType GuestType { get; private set; }
         public IEnumerable<DateTimeOffset> DaysOfStaying { get; private set; }
 
-        public GuestDto() { }
-
         public GuestDto(HotelGuestType guestType, IEnumerable<DateTimeOffset> daysOfStaying)
         {
             GuestType = guestType;

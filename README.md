@@ -1,10 +1,3 @@
-﻿# Introdução ao problema
-
-Deve haver uma maneira de prover um arquivo como entrada de dados para a aplicação
-A aplicação não deve possuir interface gráfica, ela deverá ser executada somente por linha de comando
-O código deve executar
-Você deve prover evidências suficientes de que sua solução está completa indicando, no mínimo, que ela funciona utilizando os dados de teste que são fornecidos 
-
 # Problema da Reserva de Hotel 
 
 Uma rede de hotéis em Miami gostaria de oferecer um serviço de reservas pela internet. A rede é composta por três hotéis: Lakewood, Bridgewood e Ridgewood. Cada hotel tem taxas diferenciadas para dia de semana ou final de semana, incluindo taxas específicas para participantes do programa de fidelidade. Adicionalmente, cada hotel tem uma classificação, indicando a excelência do serviço.
